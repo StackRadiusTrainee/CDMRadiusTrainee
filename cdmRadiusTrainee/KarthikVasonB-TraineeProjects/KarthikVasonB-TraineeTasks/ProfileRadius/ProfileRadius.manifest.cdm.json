@@ -1,0 +1,13 @@
+{
+  "jsonSchematicVersion": "1.1.0",
+  "manifestName": " CDM manifest",
+  "submanifests": [],
+  "entities": [
+    {
+      "type": "LocalEntity",
+      "entityName": "AccountProject",
+      "entityPath": "/KarthikVasonB-TraineeProjects/KarthikVasonB-TraineeTasks/ProfileRadius/AccountProject.cdm.json/AccountProject"
+    }
+  ],
+  "documentVersion": "1.1"
+}

@@ -1,0 +1,102 @@
+{
+
+  "$schema": "https://github.com/StackRadiusForks/CDM/blob/master/schemaDocuments/schema.cdm.json",
+  //"$schema": "../schema.cdm.json",
+
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/core/cdsConcepts.cdm.json"
+    },
+    {
+      "corpusPath": "cdm:/core/cdsConcepts.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "   ",
+      "extendsEntity": "  ",
+      "displayName": "  ",
+      "description": "   ",
+      "sourceName": " ",
+      "exhibitsTraits": [
+        {
+          "traitReference": "is.localized.describedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "contantValues": [
+                  [
+                    "en",
+                    "person with who a business unit has a relationship"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    "Contact"
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "traitReference": "is.CDM.entityVersion",
+          "arguments": [
+            {
+              "name": "versionNumber",
+              "value": "1.1"
+            }
+          ]
+        }
+      ],
+
+
+
+      "hasAttributes": [
+        {
+          "attributeGroupReference": {
+            "attributeGroupName": "attributesAddedAtThisScope",
+            "members": [
+              {
+                "name": " ",
+                "sourceName": " ",
+                "sourceOrdering": 1,
+                "description": " .",
+                "displayName": " ",
+                "isNullable": "",
+                "purpose": "  ",
+                "dataType": " ",
+                "appliedTraits": [
+                  {
+                    "traitReference": "is.requiredAtLevel",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+
+          }
+        }
+      ]
+    }
+  ],
+  "documentVersion": "x.x"
+}

@@ -1,0 +1,712 @@
+{
+
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/core/cdsConcepts.cdm.json"
+    }
+  ],
+  "definitions": [
+    {
+      "entityName": "mfRTAKFintechMFSD203.cdm",
+      "extendsEntity": "CdmEntity",
+      "displayName": "MF FINTECH MF SD203",
+      "description": "Attributes as received via RTA mailback Files",
+      "sourceName": "StackRadius_MF",
+      [
+        {
+          "traitReference": "is.localized.describedAs ",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    ""
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "traitReference": "is.localized.displayedAs",
+          "arguments": [
+            {
+              "entityReference": {
+                "entityShape": "localizedTable",
+                "constantValues": [
+                  [
+                    "en",
+                    " "
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "traitReference": "is.CDM.entityVersion",
+          "arguments": [
+            {
+              "name": "versionNumber",
+              "value": "1.0"
+            }
+          ]
+        }
+      ],
+
+
+
+
+
+      "hasAttributes": [
+        {
+          "attributeGroupReference": {
+            "attributeGroupName": "attributesAddedAtThisScope",
+            "members": [
+
+              {
+                "name": "PRCODE",
+                "sourceName": " ",
+                "sourceOrdering": 1,
+                "description": "Scheme Code as per RTA",
+                "displayName": "Scheme Code",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "entityId",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Scheme Code as per RTA "
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Scheme Code as per RTA"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "Scheme Code"
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "FUND",
+                "sourceName": "  ",
+                "sourceOrdering": 2,
+                "description": "AMC Code as per RTA",
+                "displayName": "AMC Code",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "bool",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "AMC Code as per RTA
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "AMC Code as per RTA"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "AMC Code"
+                    ]
+                  }
+                ]
+              },
+
+
+              {
+                "name": "ACNO",
+                "sourceName": "   ",
+                "sourceOrdering": 3,
+                "description": "Unique Folio number created as per the AMC Records for the unique profile of investor(S) ",
+                "displayName": "Folio",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Unique Folio number created as per the AMC Records for the unique profile of investor(S) "
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Folio"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+
+
+              {
+                "name": "FUNDDESC",
+                "sourceName": "  ",
+                "sourceOrdering": 9,
+                "description": "Scheme Name as per RTA",
+                "displayName": "Scheme Name",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Scheme Name"
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": "",
+                    "s"
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Scheme Name"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "Scheme Name"
+                  }
+                ]
+              },
+
+
+              {
+                "name": "FUNDDESC",
+                "sourceName": "  ",
+                "sourceOrdering": 4,
+                "description": "Scheme Name Code as per RTA",
+                "displayName": "Scheme Name",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Scheme Name Code as per RTA"
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Scheme Name Code as per RTA"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "Scheme Name "
+                  }
+                ]
+              },
+
+
+              {
+                "name": "INV_NAME",
+                "sourceName": "   ",
+                "sourceOrdering": 5,
+                "description": "Sole or First Holder name as per current records of the AMC for this folio",
+                "displayName": "First Holder",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "entityId",
+                "appliedTraits": [
+                  {
+                    "traitReference": " ",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Sole or First Holder name as per current records of the AMC for this folio" 
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "First Holder"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "First Holder"
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "ADDRESS1",
+                "sourceName": " ",
+                "sourceOrdering": 6,
+                "description": "ADRESS Line 1 Of First Holder as per current records of the AMC for this folio",
+                "displayName": "Address Line 1",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "First line of the user's address."
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Address Line 1"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "ADDRESS2",
+                "sourceName": "  ",
+                "sourceOrdering": 7,
+                "description": " ADRESS Line 2 OF First Holder as per current records of the AMC for this folio",
+                "displayName": "Address Line 2",
+                "isNullable": true,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+
+                            [
+                              "en",
+                              "ADRESS Line 2 OF First Holder as per current records of the AMC for this folio"
+                            ]
+
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Address Line 2"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "ADDRESS3",
+                "sourceName": " ",
+                "sourceOrdering": 8,
+                "description": " ADDRESS LINE 3 OF First Holder as per current records of the AMC for this folio",
+                "displayName": "Address Line 3",
+                "isNullable": true,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "optional"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "ADDRESS LINE 3 OF First Holder as per current records of the AMC for this folio"
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "Address Line 3"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+
+              {
+                "name": "CITY",
+                "sourceName": "",
+                "sourceOrdering": 9,
+                "description": "City of First Holder as per current records of the AMC for this folio",
+                "displayName": "City",
+                "isNullable": false,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "systemrequired"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "City of First Holder as per current records of the AMC for this folio"
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "City"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "cityid"
+                    ]
+                  }
+                ]
+              },
+
+
+              {
+                "name": "PIN",
+                "sourceName": " ",
+                "sourceOrdering": 10,
+                "description": "PIN Code of the address of the first holder as per current records of the AMC for this folio",
+                "displayName": "PIN Code",
+                "isNullable": true,
+                "purpose": "identifiedBy",
+                "dataType": "string",
+                "appliedTraits": [
+                  {
+                    "traitReference": "",
+                    "arguments": [
+                      {
+                        "name": "level",
+                        "value": "recommended"
+                      }
+                    ]
+                  },
+                  {
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "PIN Code of the address of the first holder as per current records of the AMC for this folio"
+                            ]
+                          ]
+                        }
+                      }
+                    ],
+                    "traitReference": ""
+                  },
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "PIN Code"
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "traitReference": "is.CDS.source",
+                    "arguments": [
+                      "pincodeid"
+                    ]
+                  }
+                ]
+              }
+ 

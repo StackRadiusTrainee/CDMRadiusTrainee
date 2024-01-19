@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>MfRTAFileImport_Project</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="mfRTA.cdm.json\mfRTACAMSWBR22.cdm.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="class\" />
+  </ItemGroup>
+
+</Project>
+//
+
+
+https://make.powerapps.com/environments/f0f5ac02-4b3c-4269-be8c-fa3bf4378f27/home
+
+
+
+
+

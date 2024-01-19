@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>KarthikVasonB_TraineeProjects</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CommonDataModel.ObjectModel.Adapter.CdmStandards" Version="2.8.0" />
+    <PackageReference Include="Microsoft.CommonDataModel.ObjectModel.Adapter.Syms" Version="1.7.5" />
+    <PackageReference Include="Microsoft.CommonDataModel.ObjectModel.All" Version="1.7.5" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties karthikvasonb-traineetasks_4foundations_1cdm_1json__JsonSchema="https://json.schemastore.org/accelerator.json" karthikvasonb-traineetasks_4profileradius_4intelisense_1json__JsonSchema="../schema.cdm.json" karthikvasonb-traineetasks_4profileradius_4mfrtacamswbr9_1cdm_1json__JsonSchema="../schema.cdm.json" karthikvasonb-traineetasks_4profileradius_4profileradius_1manifest_1cdm_1json__JsonSchema="../schema.cdm.json" /></VisualStudio></ProjectExtensions>
+
+</Project>

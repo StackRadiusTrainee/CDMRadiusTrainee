@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KarthikVasonB-TraineeProjects", "KarthikVasonB-TraineeProjects\KarthikVasonB-TraineeProjects.csproj", "{A98AAA1E-AF22-4600-BB41-F4C770C20FC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MfRTAFileImport-Project", "MfRTAFileImport-Project\MfRTAFileImport-Project.csproj", "{BF35254E-B62B-4531-AEE3-01A33F8BC800}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A98AAA1E-AF22-4600-BB41-F4C770C20FC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A98AAA1E-AF22-4600-BB41-F4C770C20FC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A98AAA1E-AF22-4600-BB41-F4C770C20FC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A98AAA1E-AF22-4600-BB41-F4C770C20FC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF35254E-B62B-4531-AEE3-01A33F8BC800}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF35254E-B62B-4531-AEE3-01A33F8BC800}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF35254E-B62B-4531-AEE3-01A33F8BC800}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF35254E-B62B-4531-AEE3-01A33F8BC800}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {339DB54F-60E4-4C81-9791-5B3111C65099}
+	EndGlobalSection
+EndGlobal

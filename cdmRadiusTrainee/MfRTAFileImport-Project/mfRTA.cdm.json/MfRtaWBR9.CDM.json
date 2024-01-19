@@ -1,0 +1,971 @@
+{
+  "jsonSchemaSemanticVersion": "1.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/core/cdsConcepts.cdm.json"
+    }
+  ],
+  "definitions": [
+    
+   "entityName": "MfRtacamsWbr9",
+    "extendsEntity": "CdmEntity",
+    "displayName": "MfRtacamsWbr9",
+    "description": "Attributes as present in the dbf file",
+    "sourceName": "StackRadius_MF",
+    [
+      {
+        "traitReference": "is.localized.describedAs ",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  ""
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "traitReference": "is.localized.displayedAs",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  " "
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "traitReference": "is.CDM.entityVersion",
+        "arguments": [
+          {
+            "name": "versionNumber",
+            "value": "1.0"
+          }
+        ]
+      }
+    ],
+
+
+
+
+
+       "hasAttributes" [
+      {
+        "attributeGroupReference": {
+          "attributeGroupName": "attributesAddedAtThisScope",
+          "members": [
+
+            {
+              "name": "FOLIOCHK",
+              "sourceName": "Useridid",
+              "sourceOrdering": 1,
+              "description": ".",
+              "displayName": "Userid",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "entityId",
+              "appliedTraits": [
+                      {
+                        "traitReference": "",
+                        "arguments": [
+                          {
+                            "name": "level",
+                            "value": "systemrequired"
+                          }
+                        ]
+                      },
+                      {
+                        "arguments": [
+                          {
+                            "entityReference": {
+                              "entityShape": "localizedTable",
+                              "constantValues": [
+                                [
+                                  "en",
+                                  "Unique identifier of user."
+                                ]
+                              ]
+                            }
+                          }
+                        ],
+                        "traitReference": ""
+                      },
+                      {
+                        "traitReference": "is.localized.displayedAs",
+                        "arguments": [
+                          {
+                            "entityReference": {
+                              "entityShape": "localizedTable",
+                              "constantValues": [
+                                [
+                                  "en",
+                                  "UserId"
+                                ]
+                              ]
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "traitReference": "is.CDS.source",
+                        "arguments": [
+                          "accountid"
+                        ]
+                      }
+                    ]
+                    }, 
+        
+
+
+             {
+              "name": "INV_NAME",
+              "attributes": [
+                {
+                  "name": "INV_NAME",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "ADDRESS",
+              "attributes": [
+                {
+                  "name": "ADDRESS1",
+                  "type": "string"
+                },
+                {
+                  "name": "ADDRESS2",
+                  "type": "string"
+                },
+                {
+                  "name": "ADDRESS3",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "CITY",
+              "attributes": [
+                {
+                  "name": "CITY",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "PINCODE",
+              "attributes": [
+                {
+                  "name": "PINCODE",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "PRODUCT",
+              "attributes": [
+                {
+                  "name": "PRODUCT",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "SCH_NAME",
+              "attributes": [
+                {
+                  "name": "SCH_NAME",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "REP_DATE",
+              "attributes": [
+                {
+                  "name": "REP_DATE",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "CLOS_BAL",
+              "attributes": [
+                {
+                  "name": "CLOS_BAL",
+                  "type": "integer"
+                }
+              ]
+            },
+
+
+            {
+              "name": "RUPEE_BAL",
+              "attributes": [
+                {
+                  "name": "RUPEE_BAL",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "JNT_NAME",
+              "attributes": [
+                {
+                  "name": "JNT_NAME1",
+                  "type": "integer"
+                },
+                {
+                  "name": "JNT_NAME2",
+                  "type": "integer"
+                },
+                {
+                  "name": "JNT_NAME3",
+                  "type": "integer"
+                }
+
+
+              ]
+            },
+
+            {
+              "name": "PHONE_OFF",
+              "attributes": [
+                {
+                  "name": "PHONE_OFF",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "PHONE_RES",
+              "attributes": [
+                {
+                  "name": "PHONE_RES",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "PEMAIL",
+              "attributes": [
+                {
+                  "name": "EMAIL",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+            {
+              "name": "HOLDING_NA",
+              "attributes": [
+                {
+                  "name": "HOLDING_NA",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+            {
+              "name": "UIN_NO",
+              "attributes": [
+                {
+                  "name": "UIN_NO",
+                  "type": "integer"
+                }
+              ]
+            },
+
+
+            {
+              "name": "PAN_NO",
+              "attributes": [
+                {
+                  "name": "PAN_NO",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": " JOINT1_PAN",
+              "attributes": [
+                {
+                  "name": "JOINT1_PAN1",
+                  "type": "string"
+                },
+                {
+                  "name": "JOINT1_PAN2",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "GUARD_PAN",
+              "attributes": [
+                {
+                  "name": "GUARD_PAN",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "GUARD_PAN",
+              "attributes": [
+                {
+                  "name": "GUARD_PAN",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "TAX_STATUS",
+              "attributes": [
+                {
+                  "name": "TAX_STATUS",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+            {
+              "name": "TAX_STATUS",
+              "attributes": [
+                {
+                  "name": "TAX_STATUS",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+            {
+              "name": "SUBBROKER",
+              "attributes": [
+                {
+                  "name": "SUBBROKER",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+            {
+              "name": "REINV_FLAG",
+              "attributes": [
+                {
+                  "name": "REINV_FLAG",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "BANK_NAME",
+              "attributes": [
+                {
+                  "name": "BANK_NAME",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "AC_TYPE",
+              "attributes": [
+                {
+                  "name": "AC_TYPE",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "AC_NO",
+              "attributes": [
+                {
+                  "name": "AC_NO",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "B_ADDRESS",
+              "attributes": [
+                {
+                  "name": "B_ADDRESS1",
+                  "type": "string"
+                },
+                {
+                  "name": "B_ADDRESS2",
+                  "type": "string"
+                },
+                {
+                  "name": "B_ADDRESS3",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "B_CITY",
+              "attributes": [
+                {
+                  "name": "B_CITY",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "B_PINCODE",
+              "attributes": [
+                {
+                  "name": "B_PINCODE",
+                  "type": "integer"
+                }
+              ]
+            },
+
+
+            {
+              "name": "INV_DOB",
+              "attributes": [
+                {
+                  "name": "INV_DOB",
+                  "type": "integer"
+                }
+              ]
+            },
+
+            {
+              "name": "MOBILE_NO",
+              "attributes": [
+                {
+                  "name": "MOBILE_NO",
+                  "type": "integer"
+                }
+              ]
+            },
+
+
+            {
+              "name": "OCCUPATION",
+              "attributes": [
+                {
+                  "name": "OCCUPATION",
+                  "type": "string"
+                }
+              ]
+            },
+
+
+            {
+              "name": "INV_IIN",
+              "attributes": [
+                {
+                  "name": "INV_IIN",
+                  "type": "string"
+                }
+              ]
+            },
+
+            {
+              "name": "NOM_NAME",
+              "attributes": [
+                {
+                  "name": "NOM_NAME",
+                  "type": "integer"
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "RELATION",
+              "attributes": [
+                {
+                  "name": "RELATION",
+                  "type": "string"
+                }
+              ]
+            },
+
+            //
+
+            "name",
+            :,
+            "RELATION",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "NOM_ADDR1",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "NOM_ADDR2",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "NOM_ADDR3 ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "NOM_CITY",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "NOM_STATE ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "NOM_PINCODE",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+
+            "name",
+            :,
+            "MOBILE_NO ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "MOBILE_NO ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "MOBILE_NO ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+            "name",
+            :,
+            "MOBILE_NO ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ],
+
+            "name",
+            :,
+            "MOBILE_NO ",
+            "sourceName",
+            :,
+            "   "
+            ";",
+            ,
+            "sourceOrdering",
+            :,
+            "  "
+            ";",
+            ,
+            "description",
+            :,
+            "  ",
+            "displayName",
+            :,
+            "  ",
+            "isNullable",
+            :,
+            " ",
+            "purpose",
+            :,
+            "  ",
+            "dataType",
+            :,
+            "  ,",
+            "appliedTraits",
+            :,
+            [
+
+            ]
+
+
+
+
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        

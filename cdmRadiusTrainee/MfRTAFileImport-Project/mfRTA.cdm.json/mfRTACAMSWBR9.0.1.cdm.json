@@ -1,0 +1,4403 @@
+{
+  "jsonSchemaSemanticVersion": "1.1.0",
+  "imports": [
+    {
+      "corpusPath": "cdm:/core/cdsConcepts.cdm.json"
+    }
+  ],
+  "definitions": [
+   {
+   "entityName": "mfRTACAMSwbr9",
+    "extendsEntity": "CdmEntity",
+    "displayName": "MF RTA CAMS wbr9",
+    "description": "Attributes as received via RTA mailback Files",
+    "sourceName": "StackRadius_MF",
+    [
+      {
+        "traitReference": "is.localized.describedAs ",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  ""
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "traitReference": "is.localized.displayedAs",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  " "
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "traitReference": "is.CDM.entityVersion",
+        "arguments": [
+          {
+            "name": "versionNumber",
+            "value": "1.0"
+          }
+        ]
+      }
+    ],
+
+
+
+
+
+    "hasAttributes":
+   [
+      {
+        "attributeGroupReference": {
+          "attributeGroupName": "attributesAddedAtThisScope",
+          "members": [
+
+            {
+              "name": "FOLIOCHK",
+              "sourceName": "  ",
+              "sourceOrdering": 1,
+              "description": "Unique Folio number created as per the AMC Records for the unique investor(S) profile ID",
+              "displayName": "Folio",
+              "isNullable": false,
+              "purpose": "identifiedBy", // what is the purpose of purpose?
+              "dataType": "entityId",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Unique Folio number created as per the AMC Records for the unique investor(S) profile ID"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "accountid"
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "INV_NAME",
+              "sourceName": "   ",
+              "sourceOrdering": 2,
+              "description": "Sole or First Holder name as per current records of the AMC for this folio",
+              "displayName": "First Holder",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "entityId",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Sole or First Holder name as per current records of the AMC for this folio" //why "en" coming twice - see line 176 also
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "investorid" // What is this ?
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "ADDRESS1",
+              "sourceName": " ",
+              "sourceOrdering": 3,
+              "description": "ADRESS Line 1 Of First Holder as per current records of the AMC for this folio",
+              "displayName": "Address Line 1",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First line of the user's address."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Address Line 1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "ADDRESS2",
+              "sourceName": "  ",
+              "sourceOrdering": 4,
+              "description": " ADRESS Line 2 OF First Holder as per current records of the AMC for this folio",
+              "displayName": "Address Line 2",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+
+                          [
+                            "en",
+                            "ADRESS Line 2 OF First Holder as per current records of the AMC for this folio"
+                          ]
+
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Address Line 2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "ADDRESS3",
+              "sourceName": " ",
+              "sourceOrdering": 5,
+              "description": " ADDRESS LINE 3 OF First Holder as per current records of the AMC for this folio",
+              "displayName": "Address Line 3",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "optional"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ADDRESS LINE 3 OF First Holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Address Line 3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "CITY",
+              "sourceName": "",
+              "sourceOrdering": 6,
+              "description": "City of First Holder as per current records of the AMC for this folio",
+              "displayName": "City",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City of First Holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "cityid"
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "PINCODE",
+              "sourceName": " ",
+              "sourceOrdering": 7,
+              "description": "PIN Code of the address of the first holder as per current records of the AMC for this folio",
+              "displayName": "PIN Code",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PIN Code of the address of the first holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PIN Code"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "pincodeid"
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "PRODUCT",
+              "sourceName": " ",
+              "sourceOrdering": 8,
+              "description": "Scheme Code as per RTA",
+              "displayName": "Scheme Code",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Scheme Code as per RTA"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Scheme Code"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "schemeid"
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "SCH_NAME",
+              "sourceName": "  ",
+              "sourceOrdering": 9,
+              "description": "Scheme Name as per RTA",
+              "displayName": "Scheme Name", // Update 
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Scheme Name" // update
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": "",
+                  "s"
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Scheme Name" // Update 
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "Scheme Name" // Update
+                }
+              ]
+            },
+
+
+            {
+              "name": "REP_DATE",
+              "sourceName": " ",
+              "sourceOrdering": 10,
+              "description": "Date on which this file was generated",
+              "displayName": "File Date ", // Update-Completed
+              "isNullable": false,
+              "dataType": "date",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Date on which this file was generated" // Update-Completed 
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "File Date" // Update-Completed 
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "CLOS_BAL",
+              "sourceName": " ",
+              "sourceOrdering": 11,
+              "description": "Unit Balance of the scheme in this folio as per RTA records in this file", // Update-Completed
+              "displayName": "Unit Balance",
+              "isNullable": true,
+              "purpose": "financial",
+              "dataType": "decimal",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Unit balance ."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Unit Balance"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "RUPEE_BAL",
+              "sourceName": " ",
+              "sourceOrdering": 12,
+              "description": "Market Value of the unit balance in currency INR as per NAV date of this file", // Update-Completed 
+              "displayName": "Market Value",
+              "isNullable": true,
+              "purpose": "financial",
+              "dataType": "decimal",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Market Value of the unit balance in currency INR"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            " Market Value"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "JNT_NAME1",
+              "sourceName": " ",
+              "sourceOrdering": 13,
+              "description": "Second holder or First Joint holder to the First Holder as per current records of the AMC for this folio", // Update-Completed
+              "displayName": "Second Holder",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Second holder or First Joint holder to the First Holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Second Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "JNT_NAME2",
+              "sourceName": " ",
+              "sourceOrdering": 14,
+              "description": "Third Holder or Second Joint holder to the First Holder as per current records of the AMC for this folio",
+              "displayName": "Third Holder",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "optional"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Third Holder or Second Joint holder to the First Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Second Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "PHONE_OFF",
+              "sourceName": " ",
+              "sourceOrdering": 15,
+              "description": "Office Phone Number of the First Holder as per current records of the AMC for this folio",
+              "displayName": "Office Phone",
+              "isNullable": false,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Office Phone Number of the First Holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Office Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "PHONE_RES",
+              "sourceName": " ",
+              "sourceOrdering": 16,
+              "description": "Residence Phone Number of the First Holder as per current records of the AMC for this folio",
+              "displayName": "Residence Phone",
+              "isNullable": true,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Residence Phone Number of the First Holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Residence Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "EMAIL",
+              "sourceName": " ",
+              "sourceOrdering": 17,
+              "description": "Email ID of the First Holder as per current records of the AMC for this folio",
+              "displayName": "Email ID",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Email ID of the First Holder as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Email Address"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "HOLDING_NA",
+              "sourceName": " ",
+              "sourceOrdering": 18,
+              "description": "Holding nature of the investments either Single/Joint/AoS/EoS/Minor Thru Guardian",
+              "displayName": "Holding Type",
+              "isNullable": false,
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Holding nature of the investments either Single/Joint/AoS/EoS/Minor Thru Guardian" // Update-Completed
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Holdijng Type "
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "UIN_NO", // Not sure what the purpose of this attribute is, need to check with RTA.
+              "sourceName": " 19 ",
+              "sourceOrdering": 19,
+              "description": "Unique identifier for first holder",
+              "displayName": "Unique ID",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Unique identifier for first holder."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Unique ID"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "PAN_NO",
+              "sourceName": "  ",
+              "sourceOrdering": 20,
+              "description": " PAN of first holder in this folio",
+              "displayName": "PAN First Holder",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN of first holder in this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN First Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "JOINT1_PAN",
+              "sourceName": " ",
+              "sourceOrdering": 21,
+              "description": "PAN of second holder in this folio", // Update 
+              "displayName": "PAN Second Holder",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN of second holder in this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN Second Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "JOINT2_PAN",
+              "sourceName": " ",
+              "sourceOrdering": 22,
+              "description": "PAN of third holder in this folio", // Update 
+              "displayName": "PAN Third Holder",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN of third holder in this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN Third Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "GUARD_PAN",
+              "sourceName": " ",
+              "sourceOrdering": 23,
+              "description": "PAN of guardian in this folio", // Update 
+              "displayName": "PAN Guardian",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN of guardian in this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PAN Guardian"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "TAX_STATUS",
+              "sourceName": " ",
+              "sourceOrdering": 24,
+              "description": " Tax Status of First Holder in this folio as per the current records of AMC",
+              "displayName": "Tax Status",
+              "isNullable": false,
+              "purpose": ".",
+              "dataType": ".",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Tax status of user"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Tax Status of First Holder in this folio as per the current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "BROKER_COD",
+              "sourceName": " ",
+              "sourceOrdering": 25,
+              "description": "ARN (AMFI Registration Number) of Mutual Fund Distributor mapped to this folio as per RTA records",
+              "displayName": "ARN",
+              "isNullable": false,
+              "purpose": "financial",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ARN (AMFI Registration Number) of Mutual Fund Distributor mapped to this folio as per RTA records" // Update 
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ARN" //update 
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "REINV_FLAG",
+              "sourceName": " ",
+              "sourceOrdering": 26,
+              "description": "IDCW Option Flag for this scheme in the folio, if dividend option is selected",
+              "displayName": "IDCW Option",
+              "isNullable": false,
+              "purpose": "investment",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "IDCW Option Flag for this scheme in the folio, if dividend option is selected"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": "",
+                  {
+                    "traitReference": "is.localized.displayedAs",
+                    "arguments": [
+                      {
+                        "entityReference": {
+                          "entityShape": "localizedTable",
+                          "constantValues": [
+                            [
+                              "en",
+                              "IDCW Option "
+                            ]
+                          ]
+                        }
+                      }
+                    ]
+                  }
+              ]
+            },
+
+
+            {
+              "name": "BANK_NAME",
+              "sourceName": " ",
+              "sourceOrdering": 27,
+              "description": "Primary bank account bank name in the folio as per current records of AMC",
+              "displayName": "Bank Name",
+              "isNullable": false,
+              "purpose": "financial",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Name of the user's bank."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Bank Name"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+            {
+              "name": "BRANCH",
+              "sourceName": " ",
+              "sourceOrdering": 28,
+              "description": "Primary bank account branch name in the folio as per current records of AMC",
+              "displayName": "Branch Name",
+              "isNullable": false,
+              "purpose": "financial",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Primary bank account's branch name in the folio as per current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Branch Name"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+            {
+              "name": "AC_TYPE",
+              "sourceName": " ",
+              "sourceOrdering": 29,
+              "description": "Primary bank account type in the folio as per current records of AMC",
+              "displayName": " ",
+              "isNullable": false,
+              "purpose": "financial",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Primary bank account type in the folio as per current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Account Type"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "AC_NO",
+              "sourceName": " 19 ",
+              "sourceOrdering": 30,
+              "description": "Bank Account number of primary bank account in the folio as per current records of AMC",
+              "displayName": "Account No.",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Account number of primary bank account in the folio as per current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Account No."
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "B_ADDRESS1",
+              "sourceName": "  ",
+              "sourceOrdering": 31,
+              "description": "Address Line 1 of first holder bank account in the folio as per the current records of AMC",
+              "displayName": "Bank Address 1",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "User's billing address."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Bank Address 1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+            {
+              "name": "B_ADDRESS2",
+              "sourceName": "  ",
+              "sourceOrdering": 32,
+              "description": "Address Line 2 of first holder bank account in the folio as per the current records of AMC",
+              "displayName": "Bank Address 2",
+              "isNullable": true,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            " ADRESS Line 2 of first holder bank account in the folio as per the current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Bank Address 2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+
+            {
+              "name": "B_ADDRESS3",
+              "sourceName": "  ",
+              "sourceOrdering": 33,
+              "description": "ADRESS Line 3 of first holder bank account in the folio as per the current records of AMC",
+              "displayName": "Bank Address  3",
+              "isNullable": true,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "optional"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ADRESS Line 3 of first holder bank account in the folio as per the current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Bank Address 3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+
+
+            {
+              "name": "B_CITY",
+              "sourceName": "  ",
+              "sourceOrdering": 34,
+              "description": "City of first holder bank account in the folio as per the current records of AMC",
+              "displayName": "Bank City",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City of first holder bank account in the folio as per the current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Bank City"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+            {
+              "name": "B_PINCODE",
+              "sourceName": "  ",
+              "sourceOrdering": 35,
+              "description": "PIN Code of first holder bank account in the folio as per the current records of AMC",
+              "displayName": "Bank PIN Code",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PIN Code of first holder bank account in the folio as per the current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Bank Postal Code"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+            {
+              "name": "INV_DOB",
+              "sourceName": "  ",
+              "sourceOrdering": 36,
+              "description": "Date of Birth of the first holder in the folio as per current records of AMC",
+              "displayName": "D.o.B",
+              "isNullable": false,
+              "purpose": "personal",
+              "dataType": "date",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Date of Birth of the first holder in the folio as per current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "D.o.B"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+            {
+              "name": "MOBILE_NO",
+              "sourceOrdering": 37,
+              "description": "Mobile number of the first holder in the folio as per current records of AMC",
+              "displayName": "Mobile No.",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "."
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Mobile number of the first holder in the folio as per current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Mobile No."
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+
+              ]
+            },
+
+
+            {
+              "name": "OCCUPATION",
+              "sourceOrdering": 38,
+              "description": "Occupation of the first holder in the folio as per the current records of AMC",
+              "displayName": "Occupation",
+              "isNullable": true,
+              "purpose": "personal",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Occupation of the first holder in the folio as per the current records of AMC"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": "",
+                  "."
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Occupation"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "INV_IIN",
+              "sourceName": "   ",
+              "sourceOrdering": "39",
+              "description": "Investor Identification Number as per NSE NMF Records, but column is empty in RTA mailback file",
+              "displayName": "NSE IIN",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "entityId",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Investor Identification Number as per NSE NMF Records, but column is empty in RTA mailback file"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NSE IIN"
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "NOM_NAME",
+              "sourceName": "   ",
+              "sourceOrdering": 40,
+              "description": "Name of nominee",
+              "displayName": "NOMinee name",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nmae of nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First Holder"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "investorid"
+
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "RELATION",
+              "sourceName": "   ",
+              "sourceOrdering": 40,
+              "description": "Relationship between investor and nominee",
+              "displayName": "RELATION",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Relationship between investor and nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Relationship between investor and nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "RELATION"
+
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM_ADDR1",
+              "sourceName": " ",
+              "sourceOrdering": 41,
+              "description": "ADRESS Line 1 Of First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 1",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First line of the first nominee's address."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM Address Line 1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM_ADDR2",
+              "sourceName": "  ",
+              "sourceOrdering": 2,
+              "description": " ADRESS Line 2 OF First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 2",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+
+                          [
+                            "en",
+                            "ADRESS Line 2 OF First Nominee as per current records of the AMC for this folio"
+                          ]
+
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM Address Line 2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM_ADDR3",
+              "sourceName": " ",
+              "sourceOrdering": 43,
+              "description": " ADDRESS LINE 3 OF First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 3",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "optional"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ADDRESS LINE 3 OF First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM Address Line 3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM_CITY",
+              "sourceName": "",
+              "sourceOrdering": 44,
+              "description": "City of First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOMCity",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City of First NOM as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOMCity"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "NOM_STATE",
+              "sourceName": "",
+              "sourceOrdering": 45,
+              "description": "State of First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOMstate",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "State of First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "State of First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOMState"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "NOM_PINCOD",
+              "sourceName": " ",
+              "sourceOrdering": 46,
+              "description": "PIN Code of the address of the first Nominee as per current records of the AMC for this folio",
+              "displayName": "PIN Code",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PIN Code of the address of the first Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM PIN Code"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "pincodeid"
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOMPHONE_OFF",
+              "sourceName": " ",
+              "sourceOrdering": 47,
+              "description": "Office Phone Number of the First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOMINEE1 Office Phone",
+              "isNullable": false,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Office Phone Number of the First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nominee1 Office Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOMPHONE_RES",
+              "sourceName": " ",
+              "sourceOrdering": 48,
+              "description": "Residence Phone Number of the First Nominee as per current records of the AMC for this folio",
+              "displayName": "NomResidence Phone",
+              "isNullable": true,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Residence Phone Number of the First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM1Residence Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "NOM_EMAIL",
+              "sourceName": " ",
+              "sourceOrdering": 49,
+              "description": "Email ID of the First Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM1Email ID",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Email ID of the First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOMEmail Address"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM_PERCEN",
+              "sourceName": " ",
+              "sourceOrdering": 50,
+              "description": "Percentage alloted to Nominee 1 by investor ",
+              "displayName": "NOM PERCENTAGE",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Percentage alloted to Nominee 1 by investor "
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Percentage alloted to Nominee 1 by investor "
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOMPercen"
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "NOM2_NAME",
+              "sourceName": "   ",
+              "sourceOrdering": 51,
+              "description": "Nmae of second nominee",
+              "displayName": "NOMinee2 name",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nmae of Second nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nmae of Second nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    " NOMinee2 name"
+
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "RELATION",
+              "sourceName": "   ",
+              "sourceOrdering": 52,
+              "description": "Relationship between investor and nominee2",
+              "displayName": "RELATIONnom2",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Relationship between investor and Second Nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Relationship between investor and second Nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "RELATION"
+
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM2_ADDR1",
+              "sourceName": " ",
+              "sourceOrdering": 53,
+              "description": "ADRESS Line 1 Of seond Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 1",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First line of the second nominee's address."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM2 Address Line 1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM2_ADDR2",
+              "sourceName": "  ",
+              "sourceOrdering": 54,
+              "description": " ADRESS Line 2 OF second Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 2",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+
+                          [
+                            "en",
+                            "ADdRESS Line 2 OF second Nominee as per current records of the AMC for this folio"
+                          ]
+
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM2 Address Line 2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM2_ADDR3",
+              "sourceName": " ",
+              "sourceOrdering": 55,
+              "description": " ADDRESS LINE 3 OF Second Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 3",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "optional"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ADDRESS LINE 3 OF Third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM3 Address Line 3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM2_CITY",
+              "sourceName": "",
+              "sourceOrdering":56,
+              "description": "City of second Nominee as per current records of the AMC for this folio",
+              "displayName": "NOMCity",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City of First NOM as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOMCity"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "NOM2_STATE",
+              "sourceName": "",
+              "sourceOrdering": 57,
+              "description": "State of SEcond Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM2state",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "State of First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "State of First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOMState"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "NOM2_PINCOD",
+              "sourceName": " ",
+              "sourceOrdering": 58,
+              "description": "PIN Code of the address of the second Nominee as per current records of the AMC for this folio",
+              "displayName": "PIN Code",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PIN Code of the address of the first Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM PIN Code"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "pincodeid"
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM2PHONE_OFF",
+              "sourceName": " ",
+              "sourceOrdering": 59,
+              "description": "Office Phone Number of the Second Nominee as per current records of the AMC for this folio",
+              "displayName": "NOMINEE2 Office Phone",
+              "isNullable": false,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Office Phone Number of the First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nominee1 Office Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOMPHONE_RES",
+              "sourceName": " ",
+              "sourceOrdering": 60,
+              "description": "Residence Phone Number of the SECOND Nominee as per current records of the AMC for this folio",
+              "displayName": "Nom2Residence Phone",
+              "isNullable": true,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Residence Phone Number of the First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM1Residence Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "NOM2_EMAIL",
+              "sourceName": " ",
+              "sourceOrdering": 61,
+              "description": "Email ID of the Second Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM21Email ID",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Email ID of the First Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOMEmail Address"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM2_PERCEN",
+              "sourceName": " ",
+              "sourceOrdering": 62,
+              "description": "Percentage alloted to Nominee 2 by investor ",
+              "displayName": "NOM2 PERCENTAGE",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Percentage alloted to Nominee 1 by investor "
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Percentage alloted to Nominee 1 by investor "
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOMPercen"
+                  ]
+                }
+              ]
+            },
+
+
+            {
+            
+              "name": "NOM3_NAME",
+              "sourceName": "   ",
+              "sourceOrdering": 63,
+              "description": "Name of third nominee",
+              "displayName": "NOMinee3 name",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nmae of third nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nmae of third nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    " NOMinee3 name"
+
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "RELATION",
+              "sourceName": "   ",
+              "sourceOrdering": 63,
+              "description": "Relationship between investor and Third nominee",
+              "displayName": "RELATIONnom3",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": " ",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Relationship between investor and Third nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Relationship between investor and Third nominee"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "RELATIONnom3"
+
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM3_ADDR1",
+              "sourceName": " ",
+              "sourceOrdering": 64,
+              "description": "ADRESS Line 1 Of third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM3 Address Line 1",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "First line of the third nominee's address."
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM3 Address Line 1"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM3_ADDR2",
+              "sourceName": "  ",
+              "sourceOrdering": 65,
+              "description": " ADRESS Line 2 OF third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM3 Address Line 2",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+
+                          [
+                            "en",
+                            "ADRESS Line 2 OF third Nominee as per current records of the AMC for this folio"
+                          ]
+
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM3 Address Line 2"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM3_ADDR3",
+              "sourceName": " ",
+              "sourceOrdering": 66,
+              "description": " ADDRESS LINE 3 OF third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM Address Line 3",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "optional"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "ADDRESS LINE 3 OF Third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM3 Address Line 3"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM3_CITY",
+              "sourceName": "",
+              "sourceOrdering":56,
+              "description": "City of third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM3City",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City of third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "City of third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOM3City"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "NOM3_STATE",
+              "sourceName": "",
+              "sourceOrdering": 68,
+              "description": "State of Third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM3state",
+              "isNullable": false,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "State of third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "State of third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOM3State"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+            {
+              "name": "NOM3_PINCOD",
+              "sourceName": " ",
+              "sourceOrdering": 69,
+              "description": "PIN Code of the address of the third Nominee as per current records of the AMC for this folio",
+              "displayName": "PIN Code",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "PIN Code of the address of the third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM3 PIN Code"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "pincode3"
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM3PHONE_OFF",
+              "sourceName": " ",
+              "sourceOrdering": 70,
+              "description": "Office Phone Number of the third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOMINEE3 Office Phone",
+              "isNullable": false,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Office Phone Number of the third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOMINEE3 Office Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+            {
+              "name": "NOM3PHONE_RES",
+              "sourceName": " ",
+              "sourceOrdering": 71,
+              "description": "Residence Phone Number of the third Nominee as per current records of the AMC for this folio",
+              "displayName": "Nom3Residence Phone",
+              "isNullable": true,
+              "purpose": "operational",
+              "dataType": "bool",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Residence Phone Number of the third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Nom3Residence Phone"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+
+            {
+              "name": "NOM3_EMAIL",
+              "sourceName": " ",
+              "sourceOrdering": 72,
+              "description": "Email ID of the third Nominee as per current records of the AMC for this folio",
+              "displayName": "NOM31Email ID",
+              "isNullable": false,
+              "purpose": "contact",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "systemrequired"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Email ID of the third Nominee as per current records of the AMC for this folio"
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "NOM3Email ID"
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+
+
+            {
+              "name": "NOM3_PERCEN",
+              "sourceName": " ",
+              "sourceOrdering": 73,
+              "description": "Percentage alloted to Nominee 3 by investor ",
+              "displayName": "NOM3 PERCENTAGE",
+              "isNullable": true,
+              "purpose": "identifiedBy",
+              "dataType": "string",
+              "appliedTraits": [
+                {
+                  "traitReference": "",
+                  "arguments": [
+                    {
+                      "name": "level",
+                      "value": "recommended"
+                    }
+                  ]
+                },
+                {
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Percentage alloted to Nominee 1 by investor "
+                          ]
+                        ]
+                      }
+                    }
+                  ],
+                  "traitReference": ""
+                },
+                {
+                  "traitReference": "is.localized.displayedAs",
+                  "arguments": [
+                    {
+                      "entityReference": {
+                        "entityShape": "localizedTable",
+                        "constantValues": [
+                          [
+                            "en",
+                            "Percentage alloted to Nominee 3 by investor "
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "traitReference": "is.CDS.source",
+                  "arguments": [
+                    "NOM3Percen"
+                  ]
+                }
+              ]
+            },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

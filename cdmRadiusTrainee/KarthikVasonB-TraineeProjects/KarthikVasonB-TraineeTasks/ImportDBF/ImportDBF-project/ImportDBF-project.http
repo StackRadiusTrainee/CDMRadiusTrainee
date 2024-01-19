@@ -1,0 +1,6 @@
+@ImportDBF_project_HostAddress = http://localhost:5217
+
+GET {{ImportDBF_project_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

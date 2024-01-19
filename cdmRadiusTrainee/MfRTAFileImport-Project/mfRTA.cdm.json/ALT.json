@@ -1,0 +1,2306 @@
+{
+  "definitions: [ {
+  "purposeName": null,
+
+  "entityName": "StackRadius",
+  "extendsEntity": "CdmEntity",
+  "displayName": "StackRadius",
+  "description": "The bank that the branch is associated with.",
+  "sourceName": "StackRadius_MF",
+  "exhibitsTraits": [
+    {
+      "traitReference": "is.localized.describedAs ",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                ""
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                " "
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDM.entityVersion",
+      "arguments": [
+        {
+          "name": "versionNumber",
+          "value": "1.0"
+        }
+      ]
+    }
+  ]
+}
+
+
+"hasAttributes": [
+
+{
+  "name": "UserId",
+  "sourceName": "Useridid",
+  "sourceOrdering": 1,
+  "description": ".",
+  "displayName": "Userid",
+  "isNullable": false,
+  "purpose": "identifiedBy",
+  "dataType": "entityId",
+  "appliedTraits": [
+    {
+      "traitReference": "",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier of user."
+              ]
+            ]
+          }
+        }
+      ],
+      "traitReference": ""
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "UserId"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.source",
+      "arguments": [
+        "accountid"
+      ]
+    }
+  ]
+} } }, {
+  "entityName": " FOLIOCHK",
+  "extendsEntity": "FOLIOCHK  ",
+  "displayName": "FOLIOCHECK  ",
+  "description": " This is to check Folio for the corresponding user  ",
+  "sourceName": "foliocheck",
+  "exhibitsTraits": [
+
+    "traitReference",
+    :,
+    "is.localized.describedAs",
+    "arguments",
+    :,
+    [
+      {
+        "entityReference": {
+          "entityShape": "localizedTable",
+          "contantValues": [
+            [
+              "en",
+              "person with who a business unit has a relationship"
+            ]
+          ]
+        }
+      }
+    ]
+}, {
+  "traitReference": "is.localized.displayedAs",
+  "arguments": [
+    {
+      "entityReference": {
+        "entityShape": "localizedTable",
+        "constantValues": [
+          [
+            "en",
+            "Contact"
+          ]
+        ]
+      }
+    }
+  ]
+}, {
+  "traitReference": "is.CDM.entityVersion",
+  "arguments": [
+    {
+      "name": "versionNumber",
+      "value": "1.1"
+    }
+  ]
+}, {
+  "name": " FOLIOCHK ",
+  "sourceName": null,
+
+  "sourceOrdering": " 01 ",
+  "description": " To verify folio of the user   ",
+  "displayName": "FOLIOCHK",
+  "isNullable": false,
+  "purpose": "identifiedBy  ",
+  "dataType": " entityId ",
+  "appliedTraits": [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "FOLIO VERFICATION"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}, {
+
+  "name": " INV_NAME ",
+  "sourceName": "   ",
+  "sourceOrdering": "2 ",
+  "description": " To get the name of the investor ",
+  "displayName": " INV_NAME  ",
+  "isNullable": false,
+  "purpose": "  ",
+  "dataType": "  ",
+  "appliedTraits": [
+    "traitReference",
+    :,
+    "is.requiredAtLevel",
+    "arguments",
+    :,
+    [
+      {
+        "name": "level",
+        "value": "systemrequired"
+      }
+    ]
+}, {
+  "traitReference": "is.localized.describedAs",
+  "arguments": [
+    {
+      "entityReference": {
+        "entityShape": "localizedTable",
+        "constantValues": [
+          [
+            "en",
+            "to get the name of the investor "
+          ]
+        ]
+      }
+    }
+  ]
+} ], "name": " ADDRESS1 ", "sourceName": "   ", ";", : null, "sourceOrdering": "  ", ";", : null, "description": " 03 ", "displayName": " ADDRESS1  ", "isNullable": false, "purpose": "  ", "dataType": "  ,", "appliedTraits": [
+  "traitReference",
+  :,
+  "is.requiredAtLevel",
+  "arguments",
+  :,
+  [
+    {
+      "name": "level",
+      "value": "systemrequired"
+    }
+  ]
+  },
+
+
+
+  {
+    "traitReference": "is.localized.describedAs",
+    "arguments": [
+      {
+        "entityReference": {
+          "entityShape": "localizedTable",
+          "constantValues": [
+            [
+              "en",
+              "FOLIO VERFICATION"
+            ]
+          ]
+        }
+      }
+    ]
+  },
+], {
+  "name": " ADDRESS2 ",
+  "sourceName": "   ",
+  "sourceOrdering": "04  ",
+  "description": "  ",
+  "displayName": " ADDRESS2 ",
+  "isNullable": false,
+  "purpose": "  ",
+  "dataType": "  ,",
+  "appliedTraits": [
+    [
+      "traitReference",
+      :,
+      "is.requiredAtLevel",
+      "arguments",
+      :,
+      [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+}, {
+  "traitReference": "is.localized.describedAs",
+  "arguments": [
+    {
+      "entityReference": {
+        "entityShape": "localizedTable",
+        "constantValues": [
+          [
+            "en",
+            "THIS ISD FOR ADDRESS 2"
+          ]
+        ]
+      }
+    }
+  ]
+}, ], ], {
+  "name": " ADDRESS3 ",
+  "sourceName": "   ",
+  "sourceOrdering": " 05 ",
+  "description": "  ",
+  "displayName": "  ADDRESS3  ",
+  "isNullable": " ",
+  "purpose": "  ",
+  "dataType": "  ,",
+  "appliedTraits": [
+    [
+      {
+        "traitReference": "is.requiredAtLevel",
+        "arguments": [
+          {
+            "name": "level",
+            "value": "systemrequired"
+          }
+        ]
+      },
+      {
+        "traitReference": "is.localized.describedAs",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  "Unique identifier for entity instances."
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "traitReference": "is.localized.displayedAs",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  "Bank"
+                ]
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "traitReference": "is.CDS.sourceNamed",
+        "arguments": [
+          "msfsi_bankid"
+        ]
+      }
+}, ], ], "name": " CITY ", "sourceName": "   ", ";": null, "sourceOrdering": " 06 ", ";": null, "description": "  ", "displayName": "  ", "isNullable": " ", "purpose": "  ", "dataType": "  ,", "appliedTraits": [
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        "msfsi_bankid"
+      ]
+    }
+    }
+  ]
+  },
+
+
+
+
+
+
+  "name"
+  :
+  " PINCODE ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 07  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        "msfsi_bankid"
+      ]
+    }
+  ]
+
+  "name"
+  :
+  "PRODUCT  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 08  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        "msfsi_bankid"
+      ]
+    }
+  ]
+
+
+
+
+  "name"
+  :
+  " SCH_NAME ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 09 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        "msfsi_bankid"
+      ]
+    }
+  ]
+
+  "name"
+  :
+  " REP_DATE ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 10 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "datuaType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+    [
+      "traitReference"
+      :
+      "is.requiredAtLevel",
+      "arguments"
+      :
+      [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+      },
+      {
+        "traitReference": "is.localized.describedAs",
+        "arguments": [
+          {
+            "entityReference": {
+              "entityShape": "localizedTable",
+              "constantValues": [
+                [
+                  "en",
+                  ""
+                ]
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  ]
+  "name"
+  :
+  "CLOS_BAL  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "11  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        ""
+      ]
+    }
+  ]
+
+
+
+  "name"
+  :
+  " RUPEE_BAL ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 12 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        "msfsi_bankid"
+      ]
+    }
+  ]
+
+
+
+  "name"
+  :
+  " JNT_NAME1",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 13 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTrait:
+  [
+    {
+      "traitReference": "is.requiredAtLevel",
+      "arguments": [
+        {
+          "name": "level",
+          "value": "systemrequired"
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.describedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Unique identifier for entity instances."
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.localized.displayedAs",
+      "arguments": [
+        {
+          "entityReference": {
+            "entityShape": "localizedTable",
+            "constantValues": [
+              [
+                "en",
+                "Bank"
+              ]
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "traitReference": "is.CDS.sourceNamed",
+      "arguments": [
+        "msfsi_bankid"
+      ]
+    }
+  ]
+
+  "name"
+  :
+  "JNT_NAME2 ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "14  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "PHONE_OFF ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 15 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "PHONE_RES ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 16 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+  "name"
+  :
+  "EMAIL ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 17 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+  "name"
+  :
+  "HOLDING_NA  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 18 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+  "name"
+  :
+  "UIN_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 19 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+  "name"
+  :
+  "PAN_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 20 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+
+
+  "name"
+  :
+  "JOINT1_PAN ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 21 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+
+
+
+
+  "name"
+  :
+  "JOINT2_PAN  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 22 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "GUARD_PAN ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 23 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+  "name"
+  :
+  "TAX_STATUS  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 24 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+  "name"
+  :
+  "BROKER_COD  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 25 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "SUBBROKER  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "26  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+  "name"
+  :
+  "REINV_FLAG  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 27 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+
+  "name"
+  :
+  "BANK_NAME ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 28 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  " BRANCH",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  " 29 "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+  "name"
+  :
+  "AC_TYPE ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "AC_NO
+  ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+
+  "name"
+  :
+  "B_ADDRESS1 ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+
+  "name"
+  :
+  "B_ADDRESS2",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+  "name"
+  :
+  "B_ADDRESS3 ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+
+
+  "name"
+  :
+  "B_CITY",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  v
+  [
+
+  ]
+
+
+  "name"
+  :
+  "B_PINCODE ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "INV_DOB ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "MOBILE_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+
+  "name"
+  :
+  "OCCUPATION ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "INV_IIN ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_NAME",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "RELATION",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_ADDR1",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_ADDR2",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_ADDR3 ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_CITY",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_STATE ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "NOM_PINCODE",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+
+  "name"
+  :
+  "MOBILE_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "MOBILE_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "MOBILE_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+  "name"
+  :
+  "MOBILE_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]
+
+  "name"
+  :
+  "MOBILE_NO ",
+  "sourceName"
+  :
+  "   "
+  ;
+  "sourceOrdering"
+  :
+  "  "
+  ;
+  "description"
+  :
+  "  ",
+  "displayName"
+  :
+  "  ",
+  "isNullable"
+  :
+  " ",
+  "purpose"
+  :
+  "  ",
+  "dataType"
+  :
+  "  ,"
+  "appliedTraits"
+  :
+  [
+
+  ]

@@ -1,0 +1,30 @@
+{
+	"jsonSchematicVersion": "1.0",
+	"manifestName": "Mutual funds RTA manifest document ",
+	"submanifests": [],
+	"entities": [
+		{
+			"type": "LocalEntity",
+			"entityName": "mfRTACAMSWB9",
+			"entityPath": "mfRTACAMSWB9.cdm.json/mfRTACAMSWB9"
+		},
+		{
+			"type": "LocalEntity",
+			"entityName": "mfRTACAMSWBR22",
+			"entityPath": "mfRTACAMSWBR22.cdm.json/mfRTACAMSWBR22"
+		},
+		{
+			"type": "LocalEntity",
+			"entityName": "mfRTAKFintechMFSD203 ",
+			"entityPath": "mfRTAKFintechMFSD203.cdm.json/mfRTAKFintechMFSD203"
+		},
+		{
+			"type": "LocalEntity",
+			"entityName": "mfRTAKFintechMFSD211",
+			"entityPath": "mfRTAKFintechMFSD211.cdm.json/mfRTAKFintechMFSD211"
+		}
+		
+		
+	],
+	"documentVersion": "1.0"
+}

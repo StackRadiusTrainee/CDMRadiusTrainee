@@ -1,0 +1,6 @@
+C:\Users\karth\source\repos\Stack Radius Github\StackRadiusTrainee\KarthikVasonB-TraineeSolutions\KarthikVasonB-TraineeProjects\KarthikVasonB-TraineeTasks\ProfileRadius
+
+
+TASKS
+
+1. Create custom entity named as Account.cdm.json by importing previous level account entity from the StackRadius cdm fork.
